@@ -2,7 +2,7 @@
 
 RevPulse AI is an advanced sentiment-driven forecasting tool designed to decode market signals and predict earnings call outcomes. By aggregating real-time data from Reddit, WSJ, CNBC, and other sources, it uses cutting-edge AI to analyze sentiment, contextualize insights, and infer if a company will hit or miss revenue forecasts. Whether it's gauging public perception or dissecting expert commentary, RevPulse AI fuses qualitative sentiment analysis with quantitative modeling to give businesses and investors a sharper edge in decision-making.
 
-# Data Collection
+## Data Collection
  
 Reddit:
 	•	Reddit API (PRAW) to extract comments and posts from relevant subreddits (e.g., r/stocks, r/investing).
@@ -16,7 +16,7 @@ Other Sources:
 	◦	Twitter API for social media chatter.
 	◦	Google Alerts or RSS feeds for specific company news.
 
-# Preprocess the Data
+## Preprocess the Data
 	•	Text Cleaning:
 	◦	Remove URLs, special characters, and excessive whitespace.
 	◦	Tokenize the text and handle stop words.
@@ -27,17 +27,17 @@ Other Sources:
 	◦	Extract keywords like "forecast," "beat," "miss," "guidance."
 	◦	Include metadata such as source, date, or sentiment intensity.
 
-# Fine-Tuning or Context-Specific Instructions:
+## Fine-Tuning or Context-Specific Instructions:
 	•	Fine-tune ChatGPT with data from your niche (earnings calls, forecasts, etc.) to make it more relevant.
 	•	If fine-tuning is not possible, use carefully designed prompts with context.
  
-# Parallelizing Analysis:
+## Parallelizing Analysis:
 	•	Use ChatGPT to run alongside your ML models:
 	◦	While the ML model predicts quantitative performance (hit/miss forecasts), ChatGPT can provide qualitative context, like:
 	▪	"Why is the sentiment negative despite a forecast beat?"
 	▪	"How might market sentiment adjust to unexpected guidance?"
  
-# Automation:
+## Automation:
 	•	Integrate ChatGPT into your pipeline:
 	◦	Use tools like Zapier, Airflow, or custom Python scripts to automate interactions with the OpenAI API.
 	Example:
